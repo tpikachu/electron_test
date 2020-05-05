@@ -32,9 +32,14 @@
     "copyright": "©${author} 2019-2020",
     "asar": true,
     "icon": "icon.png",
+    "extraResources": [
+		  {
+			  "from": "../common",
+			  "to": "common"
+		  }
+	  ],
     "files": [
-      "**/*",
-      "../common/img/*"
+	    "**/*"
     ],
     "win": {
       "target": "NSIS"
