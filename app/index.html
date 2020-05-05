@@ -7,7 +7,7 @@
 <body>
     <script type="text/javascript">
         const path = require("path");
-        const isDev = true;
+        const isDev = true; // just for debugging! set this to false before compiling
         const appPath = __dirname;
         const appResourcePath = isDev ? path.join(appPath, "..", "common") : path.join(appPath, "common");
 
