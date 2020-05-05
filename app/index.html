@@ -7,14 +7,8 @@
 <body>
     <script type="text/javascript">
         const path = require("path");
-        const isDev = require("electron-is-dev");
         const appPath = __dirname;
-        const appResourcePath = isDev ? path.join(appPath, "..", "common") : path.join(appPath, "common");
-
-        module.exports = {
-          appPath,
-          appResourcePath
-        };
+        const appResourcePath = path.join(appPath, "..", "common");
         console.log(path.join(appResourcePath, 'img', 'background.jpg'))
         var testpic = document.createElement('img')
         testpic.src = path.join(appResourcePath, 'img', 'background.jpg')
