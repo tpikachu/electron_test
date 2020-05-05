@@ -17,6 +17,7 @@
   "dependencies": {
     "adm-zip": "^0.4.14",
     "electron-download-manager": "^2.3.0",
+    "electron-is-dev": "^1.2.0",
     "electron-settings": "^3.2.0",
     "jquery": "^3.5.0",
     "materialize-css": "^1.0.0",
