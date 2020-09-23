@@ -6,6 +6,9 @@ const WebSocket = require("ws");
 const AdmZip = require("adm-zip");
 const rimraf = require("rimraf");
 // Electron and Electron modules import
+
+
+
 const electron = require("electron");
 const DownloadManager = require("electron-download-manager");
 const { app, BrowserWindow, ipcMain, Menu, globalShortcut, shell } = electron;
@@ -13,10 +16,9 @@ const settings = require("electron-settings");
 
 
 // Creates the main menu window
-function createMainWindow() {
-  let mainWindow = new BrowserWindow({
-    width: 1000,
-    height: 800,
+function createMainWindow() {  let mainWindow = new BrowserWindow({
+    width: 1200,
+    height: 600,
     icon: path.join(__dirname, "icon.png"),
     webPreferences: {
       nodeIntegration: true,
