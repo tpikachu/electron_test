@@ -17,17 +17,18 @@ const settings = require("electron-settings");
 
 // Creates the main menu window
 function createMainWindow() {  let mainWindow = new BrowserWindow({
-    width: 1200,
-    height: 600,
+    width: 1000,
+    height: 200,
     icon: path.join(__dirname, "icon.png"),
     webPreferences: {
       nodeIntegration: true,
       allowEval: false,
     },
-  });
+  })
 
   // Add custom menu bar to the app
   var menu = Menu.buildFromTemplate([
+
     {
       label: "Test App",
       submenu: [
@@ -54,8 +55,7 @@ function createMainWindow() {  let mainWindow = new BrowserWindow({
           },
         },
       ],
-    },
-    {
+    },    {
       role: "window",
       submenu: [
         {
